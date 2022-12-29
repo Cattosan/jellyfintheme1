@@ -1,0 +1,227 @@
+/*Rounded corners and square hover buttons*/
+.cardContent-button, 
+.cardContent-shadow, 
+.itemDetailImage, 
+.cardOverlayButton-hover, 
+.cardOverlayContainer,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog
+{border-radius: 10px !important;}
+
+/*Minimalistic play buttons*/
+.cardOverlayFab-primary {background-color: #00000000; transistion: 8sec;}
+.cardOverlayButtonIcon {background-color: #00000000 !important;}
+.cardOverlayContainer {background-color: rgba(0, 0, 0, 0.8);}
+
+/*Theme some dialogues*/
+.dialog {background-color: rgba(0, 0, 0, 0.9);}
+.actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
+.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
+.navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
+
+/*Tweak series/movie/album title screen*/
+.detailLogo {display: none;}
+.detailPagePrimaryContainer {background: rgba(0,0,0,0) !important;}
+@media all and (min-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0,0,0,0.05); !important;}
+    .itemBackdrop {height: 23vh !important; background-image: none !important;}
+}
+@media all and (min-width: 32em) and (max-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0, 0, 0, 0.1) !important;}
+    .itemBackdrop {height: 10em !important; background-image: none !important;}
+}
+
+
+
+.itemProgressBar {height: 2.5px; background: rgba(0,0,0,0);}
+.cardIndicators {right: 0.3em; top: 0.3em;}
+.paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
+u/media all and (min-width: 100em){
+    .cardOverlayFab-primary {background-color: #00000000;}
+    .cardOverlayButtonIcon {background-color: #00000000 !important;}
+    .cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
+}
+u/media all and (max-width: 100em){
+    .cardOverlayButtonIcon {border-radius: 5px !important;}
+    .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
+    .cardOverlayButton {padding: 0.3em;}
+}
+    /* Video Control Panel (blurred_mediaplayer) */
+    --video-controlpanel-background: var(--default-transparent-black);
+    --video-controlpanel-blur-amount: 8px;
+    --video-controlpanel-brightness-amount: 100%;
+    /* Progress Bar (colored_progress_bar) */
+    --progressbar-card-color: var(--main-color);
+    --progressbar-card-background-color: var(--default-transparent-black);
+    --progressbar-blur-amount: var(--tertiary-blur-amount);
+    /* Save Buttons (colored_save_buttons), make it a gradient if you want! */
+    --save-button-color: var(--main-color);
+    /* Colored Tab Buttons (colored_tabbuttons) */
+    --tabbutton-color: var(--interact-color);
+    --tabbutton-hover-color: var(--main-color);
+    /* Navigation Buttons (colored_nav_buttons) */
+    --navmenu-background: var(--main-gradient);
+
+
+/*Size episode preview images in a more compact way*/
+.listItemImageButton-icon {padding: 0;}
+.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
+.listItemImageButton {margin: auto; font-size: 1.6em !important;}
+@media all and (min-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
+    .listItem-content {height: 115px;}
+    .secondary.listItem-overview.listItemBodyText {height: 4em; margin: 0;}
+}
+@media all and (max-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
+    .listItem-content {height: 85px;}
+    .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
+
+/* Remove Media Images */
+.section0 .cardScalable {
+    display: none;
+}
+/* remove My Media title */
+.section0 .sectionTitle {
+    display: none;
+}
+/* My Media Styling */
+.section0 .itemsContainer {
+    align-items: center;
+    justify-content: center;
+}
+.section0 button.itemAction.textActionButton {
+    height: 3.5em;
+    background: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+.section0 .overflowBackdropCard,
+    .section0 .overflowSmallBackdropCard {
+        max-width: 9vw;
+    }
+.section0 .emby-scroller {
+    margin-right: 0;
+  }
+  .section0 .emby-scrollbuttons {
+    display: none;
+  }
+  .section0 .itemsContainer {
+    flex-wrap: wrap;
+  }
+
+@media (max-width: 75em) and (orientation: landscape){
+.section0 {
+    display: none;
+} }
+
+@media (max-width: 75em){
+.section0 {
+    display: none;
+}    }
+.raised.homeLibraryButton:hover {transition: filter 1s}
+.raised.homeLibraryButton {transition: filter 1s}
+.homeLibraryButton {
+    min-width: 12em;
+    margin: 0.4em;
+}
+
+
+/*Narrow the login form*/
+#loginPage .readOnlyContent, #loginPage form {max-width: 44em;}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/*Hide "manual" and "forgot" buttons*/
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/BUwzIIB.jpg) !important; background-size: cover !important;}
+
+/*Top Menu - Transparent Top Menu*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
+
+/*Top Menu - Hide some top menu Icons*/
+.headerCastButton {display: none;}
+.headerSyncButton {display: none;}
+.material-icons.person {display: none;}
+.headerButton.headerButtonRight.headerUserButton.paper-icon-button-light {display: none;}
+.emby-tabs-slider {display: none;}
+
+/*Library Page - remove vertical alpha Picker*/
+div.alphaPickerRow-vertical {display: none !important;}
+/*Library (Folders) - Remove Shuffle and play all buttons*/
+.btnShuffle.button-flat {display: none;}
+/*Item Page - Remove More Like This*/
+
+
+/*Item Page - resize Subtitle bar*/
+.trackSelections {max-width: 22em;}
+
+/*Remove scenes */
+#scenesCollapsible { display: none; }
+
+
+
+#castContent .card.overflowPortraitCard { width: 4.2cm; font-size: 90%; }
+
+#castContent .personCard { width: auto; }
+
+#castContent .personCard .cardBox { margin-bottom: 0px; margin-right: 0px; }
+
+#castContent { flex-wrap: wrap; max-height: 9.75em; }
+
+div.personCard > :first-child > :first-child { display: none; }
+
+.itemDetailPage .cardText { text-align: left; }
+
+.itemDetailPage .textActionButton { text-align: left; }
+
+@media all and (min-width: 50em) {
+  .itemDetailPage .emby-scroller {
+    margin-right: 0;
+  }
+  .itemDetailPage .emby-scrollbuttons {
+    display: none;
+  }
+  .itemDetailPage .itemsContainer {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .homePage .emby-scroller {
+    margin-right: 0;
+  }
+  .homePage .emby-scrollbuttons {
+    display: none;
+  }
+  .homePage .itemsContainer {
+    flex-wrap: wrap;
+  }
+}
+
+/* Adjust both "size-adjust" and "size" to modify size */
+.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+.pageTitle {margin-top: auto; margin-bottom: auto;}
+.emby-tab-button {padding: 1.75em 1.7em;}
+
+.itemDetailPage .moreFromSeasonSection { display: none !important; }
+.itemDetailPage .btnPlayTrailer { display: none !important; }
+.itemDetailPage .btnUserRating { display: none !important; }
+
+/*hide next up, section1 for continue watching*/
+/* .section4 {display: none;}*/
